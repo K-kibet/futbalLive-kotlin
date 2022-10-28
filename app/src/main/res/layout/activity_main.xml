@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/liveScoresCard"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="8dp"
+        app:cardElevation="8dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="8dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/ic_epl_banner_foreground"
+            android:contentDescription="@string/livescoresImage" />
+
+        <Button
+            android:id="@+id/liveScoresButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="@string/liveScores"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_marginTop="75dp"
+            android:layout_gravity="center"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/liveStreamCard"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="8dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        android:layout_weight="1"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/ic_banner_foreground"
+            android:contentDescription="@string/livestreamImage" />
+
+
+        <Button
+            android:id="@+id/liveStreamButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="@string/liveStream"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_marginTop="75dp"
+            android:layout_gravity="center" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/leaguesCard"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="8dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        android:layout_weight="1"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/ic_banner_foreground"
+            android:contentDescription="@string/leaguesImage" />
+
+        <Button
+            android:id="@+id/leaguesButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="@string/leagues"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_marginTop="75dp"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/prediction"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:id="@+id/countryFlagTV"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="football_league_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="clip_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/countryTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/irish_green"
+                android:text="Spain"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/leagueTV"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:text="laliga"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/teamOneTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Real madrid"
+                android:gravity="fill_vertical"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/resultsTV"
+                android:gravity="center"
+                android:layout_weight="1.3"
+                android:textSize="18sp"
+                android:text="2-1"
+                android:textColor="@color/greenResult"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/teamTwoTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Barcelona"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
